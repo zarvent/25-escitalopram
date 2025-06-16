@@ -13,7 +13,7 @@ class ThemeManager {
     setTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
-        
+
         // Update toggle button state
         const toggle = document.querySelector('.theme-toggle');
         if (toggle) {
@@ -140,7 +140,7 @@ class CitationSystem {
     showTooltip(event, tooltip) {
         const citationId = parseInt(event.target.textContent.replace(/[\[\]]/g, ''));
         const citation = this.citations.get(citationId);
-        
+
         if (citation) {
             const formattedCitation = this.formatCitation(citation);
             tooltip.innerHTML = formattedCitation;
@@ -156,7 +156,7 @@ class CitationSystem {
     updateTooltipPosition(event, tooltip) {
         const x = event.clientX;
         const y = event.clientY;
-        
+
         tooltip.style.left = `${x + 10}px`;
         tooltip.style.top = `${y - tooltip.offsetHeight - 10}px`;
     }
@@ -175,7 +175,7 @@ class CitationSystem {
         if (!bibliography) return;
 
         bibliography.innerHTML = '';
-        
+
         for (const [id, citation] of this.citations) {
             const entry = document.createElement('div');
             entry.className = 'bibliography-entry mb-4 p-4 bg-slate-50 rounded-lg border-l-4 border-indigo-200';
@@ -211,7 +211,7 @@ class CitationSystem {
         if (!citation) return;
 
         const formattedText = `${citation.authors} (${citation.year}). ${citation.title}. ${citation.journal}, ${citation.volume}, ${citation.pages}. DOI: ${citation.doi}`;
-        
+
         navigator.clipboard.writeText(formattedText).then(() => {
             // Show success feedback
             const btn = document.querySelector(`[data-citation-id="${citationId}"]`);
@@ -219,7 +219,7 @@ class CitationSystem {
             btn.textContent = '✓ Copiado';
             btn.style.background = '#10b981';
             btn.style.color = 'white';
-            
+
             setTimeout(() => {
                 btn.textContent = originalText;
                 btn.style.background = '';
@@ -308,7 +308,7 @@ class ScrollProgress {
             const scrollTop = window.pageYOffset;
             const docHeight = document.body.scrollHeight - window.innerHeight;
             const scrollPercent = (scrollTop / docHeight) * 100;
-            
+
             progressBar.style.transform = `scaleX(${scrollPercent / 100})`;
         });
     }
@@ -325,11 +325,11 @@ class SmoothScroller {
             anchor.addEventListener('click', (e) => {
                 e.preventDefault();
                 const target = document.querySelector(anchor.getAttribute('href'));
-                
+
                 if (target) {
                     const headerHeight = 80; // Adjust based on header height
                     const targetPosition = target.offsetTop - headerHeight;
-                    
+
                     window.scrollTo({
                         top: targetPosition,
                         behavior: 'smooth'
@@ -368,14 +368,14 @@ class ChartEnhancer {
                         { x: 0.51, y: 0.58, r: 10, medication: 'Paroxetina' },
                         { x: 0.48, y: 0.55, r: 9, medication: 'Citalopram' }
                     ],
-                    backgroundColor: function(context) {
+                    backgroundColor: function (context) {
                         const medication = context.parsed._custom || context.raw.medication;
-                        return medication === 'Escitalopram' ? 
+                        return medication === 'Escitalopram' ?
                             'rgba(99, 102, 241, 0.8)' : 'rgba(148, 163, 184, 0.6)';
                     },
-                    borderColor: function(context) {
+                    borderColor: function (context) {
                         const medication = context.parsed._custom || context.raw.medication;
-                        return medication === 'Escitalopram' ? 
+                        return medication === 'Escitalopram' ?
                             'rgba(99, 102, 241, 1)' : 'rgba(148, 163, 184, 0.8)';
                     },
                     borderWidth: 2
@@ -394,10 +394,10 @@ class ChartEnhancer {
                         borderWidth: 1,
                         cornerRadius: 8,
                         callbacks: {
-                            title: function(context) {
+                            title: function (context) {
                                 return context[0].raw.medication;
                             },
-                            label: function(context) {
+                            label: function (context) {
                                 return [
                                     `Efectividad: ${(context.raw.x * 100).toFixed(1)}%`,
                                     `Tolerabilidad: ${(context.raw.y * 100).toFixed(1)}%`
@@ -541,7 +541,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new ScrollProgress();
     new SmoothScroller();
     new LazyChartLoader();
-    
+
     // Initialize animations on scroll
     const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll');
     const observer = new IntersectionObserver((entries) => {

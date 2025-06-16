@@ -1,5 +1,6 @@
 /* Print Styles for Academic Papers */
 @media print {
+
     /* Reset default margins */
     * {
         box-shadow: none !important;
@@ -20,7 +21,8 @@
     }
 
     /* Hide non-essential elements for print */
-    header, nav, 
+    header,
+    nav,
     .scroll-progress,
     .future-icon,
     .citation-tooltip,
@@ -121,7 +123,8 @@
         margin-bottom: 15pt !important;
     }
 
-    th, td {
+    th,
+    td {
         border: 1px solid #000 !important;
         padding: 8pt !important;
         text-align: left !important;
@@ -145,7 +148,8 @@
     }
 
     /* Lists */
-    ul, ol {
+    ul,
+    ol {
         margin-bottom: 12pt !important;
     }
 
