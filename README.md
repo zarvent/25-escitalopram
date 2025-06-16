@@ -1,14 +1,14 @@
-# ✨ Zarvent Soulmate
+# ✨ [Zarvent Soulmate](https://cszv.notion.site/Zarvent-SoulMate-20b9fe782b128013bb08ef8bf1b9f8be)
 
 > **Plataforma integral de conocimiento y divulgación científica**
 > 
-> _Fundador: Sebastián Zambrana_
+> _Fundador: [Sebastián Zambrana](https://cszv.notion.site/)_
 
 ---
 
 ## 🌟 ¿Qué encontrarás aquí?
 
-Este repositorio es una base de conocimiento **en progreso** y en constante crecimiento, organizada en dos grandes áreas:
+Este repositorio es una base de conocimiento **en progreso** y ven constante crecimiento, organizada en dos grandes áreas:
 
 - 🧠 **Artículos Académicos** [`/ZVS - Artículos Académicos`]
   - Investigaciones y ensayos originales que profundizan en temas clave con un enfoque basado en la evidencia.
@@ -17,7 +17,7 @@ Este repositorio es una base de conocimiento **en progreso** y en constante crec
 
 ---
 
-## 🏛️ Nuestra Filosofía
+## 🏛️ Filosofía
 
 > "El conocimiento es más poderoso cuando se comparte."
 
