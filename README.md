@@ -1,27 +1,43 @@
-Zarvent Soulmate
-Zarvent SoulMate es más que un simple repositorio: es una plataforma integral de conocimiento y divulgación científica, centrada en la psicología y las ciencias sociales. Este proyecto, fundado por Sebastián Zambrana, busca democratizar el acceso a información rigurosa y ofrecer herramientas prácticas para el crecimiento académico, profesional y personal.
+# ✨ Zarvent Soulmate
 
-✨ ¿Qué encontrarás aquí?
-Este repositorio es una base de conocimiento curada y en constante crecimiento, organizada en dos grandes áreas:
+> **Plataforma integral de conocimiento y divulgación científica**
+> 
+> _Fundador: Sebastián Zambrana_
 
-🧠 Artículos Académicos (/ZVS - Artículos Académicos): Investigaciones y ensayos originales que profundizan en temas clave con un enfoque basado en la evidencia.
+---
 
-✍️ Guías y Apuntes (/ZVS - Apuntes): Recursos prácticos para desarrollar habilidades académicas y de escritura.
+## 🌟 ¿Qué encontrarás aquí?
 
-🏛️ Nuestra Filosofía
-Este proyecto se sustenta en tres principios fundamentales:
+Este repositorio es una base de conocimiento **en progreso** y en constante crecimiento, organizada en dos grandes áreas:
 
-Metodología Sólida: Se aplican sistemas probados como Zettelkasten (para conectar ideas) y P.A.R.A. (para organizar la información), creando una base de conocimiento intuitiva y potente que crece contigo.
+- 🧠 **Artículos Académicos** [`/ZVS - Artículos Académicos`]
+  - Investigaciones y ensayos originales que profundizan en temas clave con un enfoque basado en la evidencia.
+- ✍️ **Guías y Apuntes** [`/ZVS - Apuntes`]
+  - Recursos prácticos para desarrollar habilidades académicas y de escritura.
 
-Cultura de Conocimiento Abierto: Se fomenta la integridad académica y la colaboración para que el aprendizaje sea una experiencia colectiva y enriquecedora.
+---
 
-🤝 ¿Quieres contribuir?
-Este es un proyecto vivo y en constante desarrollo. Puedes contribuir de varias formas:
+## 🏛️ Nuestra Filosofía
 
-Reportando errores: Si encuentras erratas, información desactualizada o enlaces rotos, abre un Issue.
+> "El conocimiento es más poderoso cuando se comparte."
 
-Sugiriendo contenido: ¿Hay algún tema que te gustaría ver aquí? 
+**Este proyecto se sustenta en tres principios fundamentales:**
 
-Aportando artículos o apuntes: Si quieres añadir tu propio contenido, puedes contactarme para subir tu contenido o hacer una pull request y subirlo facilmente
+- **Metodología Sólida:**
+  - Se aplican sistemas probados como _Zettelkasten_ (para conectar ideas) y _P.A.R.A._ (para organizar la información), creando una base de conocimiento intuitiva y potente que crece contigo.
+- **Cultura de Conocimiento Abierto:**
+  - Se fomenta la integridad académica y la colaboración para que el aprendizaje sea una experiencia colectiva y enriquecedora.
 
-📜 Licencia
+---
+
+## 🤝 ¿Quieres contribuir?
+
+Este es un proyecto **vivo** y en constante desarrollo. Puedes contribuir de varias formas:
+
+- 🐞 **Reportando errores:** Si encuentras erratas, información desactualizada o enlaces rotos, abre un _Issue_.
+- 💡 **Sugiriendo contenido:** ¿Hay algún tema que te gustaría ver aquí? ¡Dímelo!
+- 📝 **Aportando artículos o apuntes:** Si quieres añadir tu propio contenido, puedes contactarme para subirlo o hacer una _pull request_ fácilmente.
+
+---
+
+## 📜 Licencia

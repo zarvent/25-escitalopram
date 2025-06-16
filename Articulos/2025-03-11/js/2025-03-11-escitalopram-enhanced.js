@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
             dataset.pointBackgroundColor = (context) => context.raw.r === 18 ? colors.highlightBorderColor : colors.pointBackgroundColor;
             dataset.pointBorderColor = colors.pointBorderColor;
         });
-        
+
         chartInstance.options.plugins.tooltip.backgroundColor = theme === 'dark' ? '#334155' : '#fff';
         chartInstance.options.plugins.tooltip.titleColor = theme === 'dark' ? '#f1f5f9' : '#1e293b';
         chartInstance.options.plugins.tooltip.bodyColor = theme === 'dark' ? '#cbd5e1' : '#334155';
