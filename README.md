@@ -19,8 +19,6 @@ Este repositorio es una base de conocimiento **en progreso** y ven constante cre
 
 ## 🏛️ Filosofía
 
-> "El conocimiento es más poderoso cuando se comparte."
-
 **Este proyecto se sustenta en tres principios fundamentales:**
 
 - **Metodología Sólida:**
@@ -34,7 +32,7 @@ Este repositorio es una base de conocimiento **en progreso** y ven constante cre
 
 Este es un proyecto **vivo** y en constante desarrollo. Puedes contribuir de varias formas:
 
-- 🐞 **Reportando errores:** Si encuentras erratas, información desactualizada o enlaces rotos, abre un _Issue_.
+- 🐞 **Reportando errores:** Si encuentras bugs, información desactualizada o enlaces rotos, abre un _Issue_.
 - 💡 **Sugiriendo contenido:** ¿Hay algún tema que te gustaría ver aquí? ¡Dímelo!
 - 📝 **Aportando artículos o apuntes:** Si quieres añadir tu propio contenido, puedes contactarme para subirlo o hacer una _pull request_ fácilmente.
 
