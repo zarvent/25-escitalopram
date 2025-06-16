@@ -1,0 +1,288 @@
+/* 
+ * 2025-03-11 - Escitalopram Article Print Styles
+ * Optimized print stylesheet for academic paper formatting
+ */
+
+@media print {
+  /* Reset and base print styles */
+  * {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Page setup */
+  @page {
+    size: A4;
+    margin: 2.5cm 2cm 2cm 2cm;
+    
+    @top-center {
+      content: "Investigación sobre el Escitalopram - 2025";
+      font-size: 10pt;
+      font-family: serif;
+      color: #666;
+    }
+    
+    @bottom-right {
+      content: "Página " counter(page) " de " counter(pages);
+      font-size: 10pt;
+      font-family: serif;
+      color: #666;
+    }
+  }
+
+  /* Body and main content */
+  body {
+    font-family: "Times New Roman", Times, serif !important;
+    font-size: 12pt !important;
+    line-height: 1.6 !important;
+    color: black !important;
+    background: white !important;
+  }
+
+  /* Hide non-essential elements */
+  .escitalopram-nav,
+  .theme-toggle,
+  .copy-citation-btn,
+  .warning-modal,
+  .citation-tooltip,
+  nav,
+  button,
+  .skip-link {
+    display: none !important;
+  }
+
+  /* Main container */
+  .container {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Typography for print */
+  .escitalopram-title {
+    font-size: 24pt !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    margin-bottom: 1cm !important;
+    color: black !important;
+    background: none !important;
+    -webkit-text-fill-color: black !important;
+    page-break-after: avoid;
+  }
+
+  .escitalopram-subtitle {
+    font-size: 14pt !important;
+    text-align: center !important;
+    margin-bottom: 1.5cm !important;
+    font-style: italic !important;
+    color: #333 !important;
+    page-break-after: avoid;
+  }
+
+  .escitalopram-section-title {
+    font-size: 16pt !important;
+    font-weight: bold !important;
+    margin-top: 1cm !important;
+    margin-bottom: 0.5cm !important;
+    color: black !important;
+    page-break-after: avoid;
+    border-bottom: 1pt solid black !important;
+    padding-bottom: 0.2cm !important;
+  }
+
+  .escitalopram-section-title::after {
+    display: none !important;
+  }
+
+  /* Content formatting */
+  .escitalopram-content {
+    max-width: none !important;
+    margin-bottom: 0.5cm !important;
+  }
+
+  .escitalopram-content p {
+    margin-bottom: 0.4cm !important;
+    text-align: justify !important;
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Cards become regular sections */
+  .escitalopram-card {
+    background: white !important;
+    border: 1pt solid #ccc !important;
+    border-radius: 0 !important;
+    padding: 0.5cm !important;
+    margin-bottom: 0.8cm !important;
+    page-break-inside: avoid;
+    box-shadow: none !important;
+  }
+
+  .escitalopram-card::before {
+    display: none !important;
+  }
+
+  /* Chart handling */
+  .escitalopram-chart-container {
+    page-break-inside: avoid;
+    border: 1pt solid #ccc !important;
+    padding: 0.5cm !important;
+    margin: 1cm 0 !important;
+    background: white !important;
+  }
+
+  #efficacyChart {
+    max-height: 12cm !important;
+  }
+
+  /* Bibliography formatting */
+  .escitalopram-bibliography {
+    page-break-before: auto;
+    background: white !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-top: 2cm !important;
+  }
+
+  .bibliography-entry {
+    background: white !important;
+    border: none !important;
+    border-left: 2pt solid black !important;
+    padding: 0.3cm 0 0.3cm 0.5cm !important;
+    margin-bottom: 0.5cm !important;
+    page-break-inside: avoid;
+  }
+
+  .bibliography-text {
+    font-size: 10pt !important;
+    line-height: 1.4 !important;
+    text-align: left !important;
+  }
+
+  /* Citation links */
+  .citation-link {
+    color: black !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    font-weight: normal !important;
+  }
+
+  .citation-link::after {
+    content: " [" attr(data-ref) "]";
+    font-size: 0.8em;
+    vertical-align: super;
+  }
+
+  /* List formatting */
+  ul, ol {
+    margin-bottom: 0.5cm !important;
+  }
+
+  li {
+    margin-bottom: 0.2cm !important;
+    page-break-inside: avoid;
+  }
+
+  /* Table formatting if any */
+  table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    margin: 0.5cm 0 !important;
+    page-break-inside: avoid;
+  }
+
+  th, td {
+    border: 1pt solid black !important;
+    padding: 0.2cm !important;
+    text-align: left !important;
+  }
+
+  th {
+    background: #f0f0f0 !important;
+    font-weight: bold !important;
+  }
+
+  /* Emphasis and strong text */
+  strong, b {
+    font-weight: bold !important;
+    color: black !important;
+  }
+
+  em, i {
+    font-style: italic !important;
+  }
+
+  /* Links */
+  a {
+    color: black !important;
+    text-decoration: underline !important;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    margin: 0.5cm 1cm !important;
+    padding: 0.3cm !important;
+    border-left: 3pt solid #ccc !important;
+    font-style: italic !important;
+    page-break-inside: avoid;
+  }
+
+  /* Footer for academic citation */
+  .print-footer {
+    position: fixed;
+    bottom: 1cm;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 9pt;
+    color: #666;
+    border-top: 1pt solid #ccc;
+    padding-top: 0.2cm;
+  }
+
+  /* Warning text for print */
+  .print-warning {
+    font-size: 10pt !important;
+    font-style: italic !important;
+    text-align: center !important;
+    margin: 1cm 0 !important;
+    padding: 0.5cm !important;
+    border: 1pt solid #666 !important;
+    page-break-inside: avoid;
+  }
+
+  /* Page breaks */
+  .page-break-before {
+    page-break-before: always;
+  }
+
+  .page-break-after {
+    page-break-after: always;
+  }
+
+  .no-page-break {
+    page-break-inside: avoid;
+  }
+
+  /* Ensure proper margins and spacing */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    margin-top: 0.8cm !important;
+    margin-bottom: 0.4cm !important;
+  }
+
+  /* Special handling for mathematical or chemical formulas */
+  .formula, .chemical {
+    font-family: "Times New Roman", serif !important;
+    font-style: italic !important;
+  }
+
+  /* Reference numbers */
+  .ref-number {
+    font-size: 0.8em;
+    vertical-align: super;
+    font-weight: normal;
+  }
+}
