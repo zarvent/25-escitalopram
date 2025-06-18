@@ -1,0 +1,15 @@
+/* Print styles for Escitalopram Article */
+@media print {
+    body {
+        background: #ffffff;
+        color: #000000;
+        font-size: 12pt;
+    }
+    nav, .theme-toggle, .scroll-progress, .warning-modal {
+        display: none !important;
+    }
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 80%;
+    }
+}
