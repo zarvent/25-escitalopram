@@ -88,7 +88,7 @@
     <title>Una Mirada al Escitalopram: Explorando la Ciencia, las Preguntas y el Futuro</title>
 
     <!-- Enhanced Styles for Escitalopram Article -->
-    <link rel="stylesheet" href="css/2025-03-11-escitalopram-enhanced.css">
+    <link rel="preload" href="css/2025-03-11-escitalopram-enhanced.min.css" as="style" onload="this.rel='stylesheet'">
 
     <!-- Print Styles for Escitalopram Article -->
     <link rel="stylesheet" href="css/2025-03-11-escitalopram-print.css" media="print">
@@ -99,7 +99,7 @@
     <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
 
     <!-- External Dependencies -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com" integrity="sha384-3lMDj6taqFU4WaVzghegEgWEX1nCLsIUZrlpmlpbokCN0Cfv3WQZD7N4svloi+3n" crossorigin="anonymous"></script>
 
     <!-- Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -870,9 +870,14 @@
     </main>
 
     <!-- Enhanced Functionality Script for Escitalopram Article -->
-    <script src="js/2025-03-11-escitalopram-enhanced.js" defer></script>
+    <script src="js/2025-03-11-escitalopram-enhanced.min.js" defer></script>
     <!-- Chart.js for interactive visualizations -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" integrity="sha384-9MhbyIRcBVQiiC7FSd7T38oJNj2Zh+EfxS7/vjhBi4OOT78NlHSnzM31EZRWR1LZ" crossorigin="anonymous" defer></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('../../sw.js');
+        }
+    </script>
 
 </body>
 
