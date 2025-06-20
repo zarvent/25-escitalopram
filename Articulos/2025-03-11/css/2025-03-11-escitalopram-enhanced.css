@@ -280,7 +280,7 @@ body {
     /* Adjust if header is sticky and has height */
     left: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    background-image: linear-gradient(to right, #6366f1 0%, #a855f7 100%);
     width: 0%;
     /* Will be updated by JS */
     z-index: 1000;
